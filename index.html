@@ -1,11 +1,126 @@
-!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="fr"> 
+    
+<head>
 
-    </body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <title>Réservia</title>
+    <script src="https://kit.fontawesome.com/47a30b9ee5.js" crossorigin="anonymous"></script>
+
+</head>    
+
+<body>
+    <div class="site-content">
+        <!--++++LE HEADER++++-->
+        <header>
+            
+            <a href="#"><img class="logo" src="images/logo/Reservia.svg" alt="logo de réservia"></a>
+            
+            <navbar class="navnar-container">
+                <a class="hebergement-link" href="#herbergement">Hébergements</a></li>
+                <a class="activity-link" href="#activity">Activité</a></li>
+                <a class="suscrib-link" href="#">S'incrire</a></li>
+            </navbar>
+            </nav>
+            <hgroup class="titre_container">
+                <h1 class="titre_principal">Trouvez votre hébergement pour des vaccances de réve</h1>
+                <h2 class="titre_secondaire">En plein centre ville ou en pleine nature</h2>
+            </hgroup>
+
+        </header>
+        <!--++++SEARCH SECTION++++-->
+        <section class="search">
+            
+            <div class="Btn-recherche">
+                <span class="pin-icone"><i class="fas fa-map-marker-alt"></i></span>
+                <form method="POST" action="#" class="recherche"> 
+                    <input class="btn-recherche_input" type="search" name="recherche" value="Marseille,France"
+                    autofocus>
+                    <input type="submit" class="btn-recherche_input_submit" value="Rechercher">
+                </form>
+                <!--<span class="btn-recher_loupe"><i><i class="Fas fa-search"></i></i></span>-->
+            </div>
+
+        </section>
+
+        <!--++++FILTER SECTION++++-->
+        <section class="filter">
+            
+            
+            <h3 class="filter-title">Filtres</h3>
+            <fieldset class="filter-container">
+                <!--filtre economique-->
+                <div class="filter-item">
+                    <span class="filter-icone"><i class="fas fa-money-bill-wave"></i></span>
+                    <form class="filter-item-formulaire eco" method="POST" action="#">
+                        <input class="filter-input" type="text" name="economique" value="économique"
+                        disabled="disabled">
+                    </form>
+                </div>
+                <!--filtre familial-->
+                <div class="filter-item">
+                    <span class="filter-icone"><i class="fas fa-child"></i></span>
+                    <form class="filter-item-formulaire famille" method="POST" action="#">
+                        <input class="filter-input" type="text" name="famille" value="Familial"
+                        disabled="disabled">
+                    </form>
+                </div>
+                <!--filtre romantique-->
+                <div class="filter-item">
+                    <span class="filter-icone"><i class="fas fa-heart"></i></span>
+                    <form class="filter-item-formulaire romantique" method="POST" action="#">
+                        <input class="filter-input" type="text" name="romantique" value="Romantique"
+                        disabled="disabled">
+                    </form>
+                </div>
+                <!--filtre animaux-->
+                <div class="filter-item">
+                    <span class="filter-icone"><i class="fas fa-dog"></i></span>
+                    <form class="filter-item-formulaire_animaux" method="POST" action="#">
+                        <input class="filter-input" type="text" name="animaux" value="Animaux autorisés"
+                        disabled="disabled">
+                    </form>
+                </div>
+
+            </fieldset>
+            <!--information-->
+            <div class="info-container">
+                <span class="icone-info"><i class="fas fa-info-circle"></i></span>
+                <p class="info">Plus de 500 logements sont disponible dans cette ville</p>
+            </div>
+
+
+        </section>
+        <footer>
+
+            <div class="footer_body">
+            
+                <ul class="lista">
+                    <li class="list-element"><strong>A propos</strong></li>
+                    <li class="list-element"><a href="#">Fonctionement du site</a></li>
+                    <li class="list-element"><a href="#">Conditions générale de vente</a></li>
+                    <li class="list-element"><a href="#">Données et confidentialité</a></li>
+                </ul>
+
+                <ul class="listb">
+                    <li class="list-element"><strong>Nos hébergement</strong></li>
+                    <li class="list-element"><a href="#">Charte de qualité</a></li>
+                    <li class="list-element"><a href="#">Conditions générale de vente</a></li>
+                </ul>
+
+                <ul class="listc">
+                    <li class="list-element"><strong>Assistance</strong></li>
+                    <li class="list-element"><a href="#">Centre d'aide</a></li>
+                    <li class="list-element"><a href="#">Nous contacter</a></li>
+                </ul>
+
+            </div>
+        </footer>
+    </div> 
+</body>
+
 </html>
 
