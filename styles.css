@@ -1,4 +1,4 @@
-/*==========TOUTES LA PAGE ==============*/
+/*========================TOUT LA PAGE==============================*/
 *{
     padding: 0;
     margin: 0;
@@ -7,15 +7,267 @@
     color: black;
 }
 /*==========TAILLE DE LA POLICE DE BASE POUR LE SITE==============*/
+
 html{
     font-size: 16px;
 }
+
 a{
     text-decoration: none;
 }
+
 ul{
     list-style-type: none;
 }
+
 fieldset{
     border: none;
+}
+/*========================MOBILE==================================
+==================================================================*/
+
+/*========================NAVEBAR=====================================*/
+navbar a{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.logo{
+    height: 55px;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    flex-wrap: wrap-reverse;
+}
+
+.hebergement-link {
+    width: 50%;
+    text-align: center;
+    border-bottom: solid 3px #0065fc;
+    color: #0065fc;
+    padding-bottom: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.activity-link {
+    width: 50%;
+    text-align: center;
+    border-bottom: solid 3px #f2f2f2;
+    padding-bottom: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.suscrib-link {
+    position: relative;
+    bottom: 56px;
+    margin-right: 5%;
+    color: #0065fc;
+}
+
+.titre_container {
+    margin: 35px 60px 0 5%  ;
+}
+
+.titre_principal {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.titre_secondaire {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Survol des lien */
+
+
+.activity-link:hover {
+    border-bottom: solid 3px #0065fc;
+    color: #0065fc;
+}
+
+.suscrib-link:hover {
+    color: #0065fc;
+    font-weight: bolder;
+}
+
+/*========================SEARCH BAR==============================*/
+
+.btn-recherche {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 35px;
+    display: flex;
+    grid-area: btn;
+}
+
+.pin-icone {
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 50px;
+    border-radius: 17% 0% 0% 17%;
+    display: flex;
+    font-size: large;
+}
+
+.pin-icone i{
+    margin: auto;
+    
+    color: black;
+}
+.btn-recherche_input {
+    height: 50px;
+    width: 250px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 15px;
+    border: solid 1px #f2f2f2;
+}
+
+.btn-recherche_input_submit {
+    visibility: hidden;
+}
+
+.btn-recherche_loupe {
+    background-color: #0065fc;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 293px;
+}
+
+.btn-recherche_loupe i {
+    margin: auto;
+    color: #f2f2f2;
+}
+
+/* ===============FILTER SECTION====================*/
+
+.filter-container {
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-title {
+    font-size: 1rem;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.filter-item {
+    display: flex;
+    margin: 10px;
+    position: relative;
+    top: 25px;
+    transition: 0.3s;
+}
+
+.filter-item i {
+    font-size: medium;
+}
+
+.filter-input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    background-color: #0065fc;
+    color: #deebff;
+}
+
+.filter-icone {
+    background-color: #deebff;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    left: -7px;
+    top: -2px;
+
+    z-index: 1;
+}
+
+.filter-icone i {
+    color: #0065fc;
+    margin: auto;
+}
+
+.filter-item-formulaire{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filter-item-formulaire input{
+    height: 50px;
+    border: solid 1px #deebff;
+    border-radius: 20px;
+    padding-left: 56px;
+    font-weight: bold;
+}
+
+.eco input {
+    width: 155px;
+}
+
+.famille input {
+    width: 129px;
+}
+
+.romantique input {
+    width: 154px;
+}
+
+.animaux input {
+    width: 190px;
+}
+
+.info {
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 5%;
+    font-weight: 400;
+}
+
+.icone-info {
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border: solid 1px #deebff;
+    border-radius: 50%;
+}
+
+.icone-info i {
+    margin: auto;
+    font-size: 0.6rem;
+    color: #0065fc;
+}
+
+/*========================FOOTER=====================================*/
+footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+
+.list-element {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.list-element a:hover{
+    color: #0065fc;
 }
