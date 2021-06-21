@@ -9,7 +9,7 @@
 /*==========TAILLE DE LA POLICE DE BASE POUR LE SITE==============*/
 
 html{
-    font-size: 16px;
+    font-size: 13px;
 }
 
 a{
@@ -259,22 +259,7 @@ navbar a{
     color: #0065fc;
 }
 
-/*========================FOOTER=====================================*/
 
-footer {
-    width: 100%;
-    background-color: #F2F2F2;
-    padding: 30px;
-}
-
-.list-element {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.list-element a:hover{
-    color: #0065fc;
-}
 
 /*========================Aside=====================================*/
 aside{
@@ -343,4 +328,205 @@ aside{
 }
 .grey-star i{
     color: #f2f2f2;
+}
+/*========================MAIN(HEBERGEMENT)==========================*/
+
+.hebergement_title {
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.hebergement_title h2 {
+    margin-top: 30px;
+}
+
+.hebergement-cards-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hebergement_card{
+    display: flex;
+    background-color: white;
+    max-width: 335px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 17px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 15px #f2f2f2;
+    transition: 0.3s;
+}
+
+.hebergement_body{
+    position: relative;
+    margin: 15px 15px 5px 15px;
+}
+.hebergement-thumb {
+    object-fit: fill;
+    height: 115px;
+    width: 128px;
+    padding: 5px;
+    border-radius: 17px 17px 0px 0px;
+}
+.hebergement_body_price{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.hebergement_body_note {
+    top: 70px;
+}
+.hebergement_body_note{
+    display: flex;
+}
+
+/*========================ACTIVITY===================================*/
+.activity_title {
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.activity-cards-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.activity_card{
+    display: flex;
+    background-color: white;
+    max-width: 335px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 17px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 15px #f2f2f2;
+    transition: 0.3s;
+}
+.body_activity{
+    position: relative;
+    margin: 15px 15px 5px 15px;
+}
+.activity-thumb {
+    object-fit: fill;
+    height: 115px;
+    width: 128px;
+    padding: 5px;
+    border-radius: 17px 17px 0px 0px;
+}
+
+/*========================FOOTER=====================================*/
+
+footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+
+.list-element {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.list-element a:hover{
+    color: #0065fc;
+}
+
+/*========================desktop==================================
+==================================================================*/
+@media only screen and (min-width: 900px)
+{
+    .site-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3.5 60% 40px 30Ù 3.5%;
+        grid-template-areas: 
+            "header header header header header"
+            "search search search search search"
+            "filter filter filter filter filter"
+            " . main . aside . "
+            "footer footer footer footer footer"
+        ;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .search{
+        grid-area: search;
+        margin: 0;
+    }
+
+    .filter{
+        grid-area: filter;
+    }
+
+    main {
+        background-color: #f2f2f2;
+        height: auto;
+        border-radius: 17px;
+        grid-area: main;
+        width: 95%;
+    }    
+
+    aside {
+        height: auto;
+        border-radius: 17px;
+        grid-area: aside;
+        max-width: 340px;
+        margin-left: 40px;
+        margin-right: 5%;
+    }
+    footer {
+            grid-area: footer;
+            width: 100%;
+        }
+
+/*==============================SEARCH============================ */
+
+    .navbar-container{
+        flex-wrap: nowrap;
+        position: relative;
+        top: -109px;
+    }
+
+    .suscrib-link{
+            position: initial;
+            margin-left: 75px;
+            padding-top: 40px;
+    } 
+    .suscrib-link:hover {
+        color: #0065fc;
+    }
+    .activity-link:hover{
+        border-bottom: none;
+        border-top: solid 3px #0065fc;
+        color: #0065fc;
+    }
+
+    .titre_container{
+        margin-top: -70px;
+    }
+
+/*==============================SEARCH============================ */
+    .btn-recherche_input_submit{
+        visibility: visible;
+        position: absolute;
+        height: 50px;
+        border: none;
+        border-radius: 0px 16px 16px 0px;
+        background-color: #0065fc;
+        color: #f2f2f2;
+        font-weight: bold;
+        padding: 15px;
+    }
+    .btn-recherche_loupe{
+        visibility: hidden;
+    }
+
+
 }
