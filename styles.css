@@ -237,7 +237,8 @@ navbar a{
 }
 
 .info-container{
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
 }
 
 .info {
@@ -321,9 +322,7 @@ aside{
     font-weight: 400;
 }
 
-.blue-star{
 
-}
 
 .blue-star i{
     color: #0065fc;
@@ -382,13 +381,14 @@ aside{
 }
 
 .activity_title {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 6%;
 }
 
 .activity_cards{
     background-color: white;
-    max-width: 335px;
+    width: 335px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -406,6 +406,11 @@ aside{
     border-radius: 17px 17px 0px 0px;
 }
 
+.activity_body{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
 
 /*========================FOOTER=====================================*/
 .footer_body{
@@ -418,11 +423,14 @@ footer {
     padding: 30px;
 }
 
-.list-element {
-    margin-top: 30px;
+.list-element:first-child {
+    margin-top: 0px;
     margin-bottom: 30px;
 }
-
+.list-element{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .list-element a:hover{
     color: #0065fc;
 }
@@ -434,7 +442,7 @@ footer {
     .site-content {
         width: 100%;
         display: grid;
-        grid-template-columns: 3.5 60% 40px 30Ù 3.5%;
+        grid-template-columns: 3.5% 60% 40px 20% 3.5% ;
         grid-template-areas: 
             "header header header header header"
             "search search search search search"
@@ -457,13 +465,13 @@ footer {
     .filter{
         grid-area: filter;
     }
-
-    main {
+	#hebergement {
         background-color: #f2f2f2;
         height: auto;
         border-radius: 17px;
         grid-area: main;
         width: 95%;
+        
     }    
 
     aside {
@@ -481,9 +489,9 @@ footer {
             grid-area: footer;
             width: 100%;
         }
-    .moo    
-/*==============================NAVBAR============================ */
-
+	
+	/*---------------------------*/
+	
     .navbar-container{
         flex-wrap: nowrap;
         position: relative;
@@ -492,17 +500,30 @@ footer {
 
     .suscrib-link{
             position: initial;
-            margin-left: 75px;
+            margin-left: 10px;
             padding-top: 40px;
     } 
     .suscrib-link:hover {
         color: #0065fc;
     }
+	
+	.activity-link{
+		width: 10%;
+		border-bottom: none;
+		padding-top: 40px;
+	}
     .activity-link:hover{
+		width: 10%;
         border-bottom: none;
         border-top: solid 3px #0065fc;
         color: #0065fc;
     }
+	.hebergement-link{
+		 width: 10%;
+		 border-bottom: none;
+		 border-top: solid 3px #0065fc;
+		 padding-top: 40px;
+	}
 
     .titre_container{
         margin-top: -70px;
@@ -523,13 +544,14 @@ footer {
     .btn-recherche_loupe{
         visibility: hidden;
     }
-
-    .hebergement-card-content{
+	
+	/*===================main(hebergement)=================================*/
+    .hebergement-card-content {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: auto;
     }
 
-    .hebergement_card{
+    .hebergement_card {
         max-width: 245px;
     }
 /*==============================FILTER============================ */
@@ -539,8 +561,8 @@ footer {
 /*==============================ACTIVITY============================ */
     .activity_cards_content{
         display: grid;
-        grid-template-columns: 3.5 20% 1fr 20% 1fr 20% 3.5%;
-        grid-template-rows: 2fr;
+        grid-template-columns: 3.5% 1fr 40px 1fr 3.5%;
+        grid-template-rows: 1fr;
     }
 
     .port {
@@ -595,7 +617,7 @@ footer {
 
     .list-element{
         margin-top: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
 
     .footer_body{
@@ -604,7 +626,8 @@ footer {
 
     .listb,
     .listc {
-        margin-left: 150px;
+        margin-left: 20%;
     }
+
 
 }
