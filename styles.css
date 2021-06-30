@@ -9,7 +9,7 @@
 /*==========TAILLE DE LA POLICE DE BASE POUR LE SITE==============*/
 
 html{
-    font-size: 16px;
+    font-size: 13px;
 }
 
 a{
@@ -237,8 +237,9 @@ navbar a{
 }
 
 .info-container{
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 5%;
+    margin-bottom: 30px;
 }
 
 .info {
@@ -249,17 +250,16 @@ navbar a{
     
 }
 
-.icone-info {
-    display: flex;
+.info i {
+    display: inline-flex;
     height: 25px;
     width: 25px;
+    justify-content: center;
+    align-items: center;
     border: solid 1px #deebff;
     border-radius: 50%;
-}
-
-.icone-info i {
     margin: auto;
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: #0065fc;
 }
 
@@ -292,6 +292,7 @@ aside{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 355px;
 }
 
 .card-aside{
@@ -320,20 +321,22 @@ aside{
 .prix-aside{
     font-size: 0.8rem;
     font-weight: 400;
+    margin-left: 5%;
 }
-
+.title-card-aside{
+    margin-left: 5%;
+}
 
 
 .blue-star i{
     color: #0065fc;
 }
-.note-aside {
-    top: 70px;
-}
 .note-aside{
     display: flex;
+    margin-top: 15%;
+    margin-left: 5%;
 }
-.grey-star i{
+.fas {
     color: #f2f2f2;
 }
 /*========================MAIN(HEBERGEMENT)==========================*/
@@ -357,6 +360,7 @@ aside{
     margin-bottom: 30px;
     box-shadow: 1px 1px 15px #f2f2f2;
     transition: 0.3s;
+
 }
 
 .hebergement-thumb {
@@ -369,19 +373,21 @@ aside{
 .hebergement_body_price{
     font-size: 0.8rem;
     font-weight: 400;
+    margin-left: 5%;
 }
 
 .hebergement_body_note{
     display: flex;
+    margin-left: 5%;
 }
 
 /*========================ACTIVITY===================================*/
 #activity{
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .activity_title {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 6%;
 }
@@ -409,6 +415,7 @@ aside{
 .activity_body{
     font-size: 0.8rem;
     font-weight: 400;
+    margin-left: 5%;
 }
 
 
@@ -420,11 +427,11 @@ aside{
 footer {
     width: 100%;
     background-color: #F2F2F2;
-    padding: 30px;
+    padding: 10px;
 }
 
 .list-element:first-child {
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 .list-element{
@@ -442,12 +449,12 @@ footer {
     .site-content {
         width: 100%;
         display: grid;
-        grid-template-columns: 3.5% 60% 40px 20% 3.5% ;
+        grid-template-columns: 5% 60% 40px 30% 5% ;
         grid-template-areas: 
             "header header header header header"
             "search search search search search"
             "filter filter filter filter filter"
-            " . main . aside . "
+            ". main . aside ."
             ". activity activity activity ."
             "footer footer footer footer footer"
         ;
@@ -478,7 +485,7 @@ footer {
         height: auto;
         border-radius: 17px;
         grid-area: aside;
-        max-width: 340px;
+        max-width: 355px;
         margin-left: 40px;
         margin-right: 5%;
     }
@@ -488,6 +495,7 @@ footer {
     footer {
             grid-area: footer;
             width: 100%;
+            font-size: 16px;
         }
 	
 	/*---------------------------*/
@@ -544,16 +552,26 @@ footer {
     .btn-recherche_loupe{
         visibility: hidden;
     }
-	
+	.card-aside-body{
+        min-width: 320px;
+    }
 	/*===================main(hebergement)=================================*/
-    .hebergement-card-content {
+    .hebergement-cards-content {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .hebergement-thumb{
+        width: 240px;
     }
 
     .hebergement_card {
         max-width: 245px;
     }
+
+    .moore
 /*==============================FILTER============================ */
     .filter-container{
         display: flex;
@@ -561,9 +579,11 @@ footer {
 /*==============================ACTIVITY============================ */
     .activity_cards_content{
         display: grid;
-        grid-template-columns: 3.5% 1fr 40px 1fr 3.5%;
+        grid-template-columns:0px 1fr 1fr 1fr 1fr ;
         grid-template-rows: 1fr;
+        column-gap: 20px;
     }
+    /*.activity_thumb{}*/
 
     .port {
         grid-column-start: 2;
@@ -573,46 +593,47 @@ footer {
     }
 
     .port img {
-        height: 305px;
+        height: 400px;
     }
 
     .fort {
-        grid-column-start: 4;
-        grid-column-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
     }
+    
 
     .frioul {
-        grid-column-start: 4;
-        grid-column-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 4;
     }
 
     .calanques {
-        grid-column-start: 6;
-        grid-column-end: 7;
+        grid-column-start: 4;
+        grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 4;
     }
 
     .calanques img {
-        height: 305px;
+        height: 400px;
     }
 
     .dame{
-        grid-column-start: 8;
-        grid-column-end: 9;
+        grid-column-start: 5;
+        grid-column-end: 6;
         grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-end: 3;
     }
 
     .park{
-        grid-column-start: 8;
-        grid-column-end: 9;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 
     .list-element{
