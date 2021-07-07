@@ -1,39 +1,41 @@
 /*========================TOUT LA PAGE==============================*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Raleway,sans-serif;
+    font-family: Raleway, sans-serif;
     color: black;
 }
+
 /*==========TAILLE DE LA POLICE DE BASE POUR LE SITE==============*/
 
-html{
+html {
     font-size: 13px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-fieldset{
+fieldset {
     border: none;
 }
+
 /*========================MOBILE==================================
 ==================================================================*/
 
 /*========================NAVEBAR=====================================*/
-navbar a{
+navbar a {
     display: block;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.logo{
+.logo {
     height: 55px;
     margin-top: 30px;
     margin-left: 5%;
@@ -75,7 +77,7 @@ navbar a{
 }
 
 .titre_container {
-    margin: 35px 60px 0 5%  ;
+    margin: 35px 60px 0 5%;
 }
 
 .titre_principal {
@@ -120,11 +122,12 @@ navbar a{
     font-size: large;
 }
 
-.pin-icone i{
+.pin-icone i {
     margin: auto;
-    
+
     color: black;
 }
+
 .btn-recherche_input {
     height: 50px;
     width: 250px;
@@ -206,12 +209,12 @@ navbar a{
     margin: auto;
 }
 
-.filter-item-formulaire{
+.filter-item-formulaire {
     display: flex;
     justify-content: flex-start;
 }
 
-.filter-item-formulaire input{
+.filter-item-formulaire input {
     height: 50px;
     border: solid 1px #deebff;
     border-radius: 20px;
@@ -236,7 +239,7 @@ navbar a{
     width: 190px;
 }
 
-.info-container{
+.info-container {
     margin-top: 40px;
     margin-left: 5%;
     margin-bottom: 30px;
@@ -247,7 +250,7 @@ navbar a{
     margin-left: 10px;
     margin-right: 5%;
     font-weight: 400;
-    
+
 }
 
 .info i {
@@ -266,7 +269,7 @@ navbar a{
 
 
 /*========================Aside=====================================*/
-aside{
+aside {
     background-color: #f2f2f2;
 }
 
@@ -277,6 +280,7 @@ aside{
     margin-bottom: 25px;
     justify-content: space-between;
 }
+
 .aside_title h2 {
     margin-top: 30px;
 }
@@ -292,10 +296,9 @@ aside{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 355px;
 }
 
-.card-aside{
+.card-aside {
     display: flex;
     background-color: white;
     max-width: 335px;
@@ -311,48 +314,54 @@ aside{
     position: relative;
     margin: 15px 15px 5px 15px;
 }
+
 .aside-thumb {
     object-fit: cover;
     height: 115px;
     width: 128px;
     padding: 5px;
-    border-radius: 17px 17px 0px 0px;
+    border-radius: 1px 1px 0px 0px;
 }
-.prix-aside{
+
+.prix-aside {
     font-size: 0.8rem;
     font-weight: 400;
     margin-left: 5%;
 }
-.title-card-aside{
+
+.title-card-aside {
     margin-left: 5%;
 }
 
 
-.blue-star i{
+.blue-star i {
     color: #0065fc;
 }
-.note-aside{
+
+.note-aside {
     display: flex;
     margin-top: 15%;
     margin-left: 5%;
 }
+
 .fas {
     color: #f2f2f2;
 }
+
 /*========================MAIN(HEBERGEMENT)==========================*/
 
 .hebergement_title {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 6%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 6%;
 }
 
 
 
 
-.hebergement_card{
+.hebergement_card {
     background-color: white;
-    max-width: 335px;
+    width: 335px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -370,19 +379,28 @@ aside{
     padding: 5px;
     border-radius: 17px 17px 0px 0px;
 }
-.hebergement_body_price{
+
+.hebergement_body_title {
+    margin-left: 5%;
+}
+
+.hebergement_body_price {
     font-size: 0.8rem;
     font-weight: 400;
     margin-left: 5%;
 }
 
-.hebergement_body_note{
+.hebergement_body_note {
     display: flex;
     margin-left: 5%;
 }
 
+.moore {
+    margin-left: 5%
+}
+
 /*========================ACTIVITY===================================*/
-#activity{
+#activity {
     margin-top: 30px;
 }
 
@@ -392,7 +410,7 @@ aside{
     margin-left: 6%;
 }
 
-.activity_cards{
+.activity_cards {
     background-color: white;
     width: 335px;
     height: auto;
@@ -404,23 +422,29 @@ aside{
     transition: 0.3s;
 }
 
-.activity_thumb {
+.activity_thumb_port,
+.activity_thumb_fort,
+.activity_thumb_frioul,
+.activity_thumb_calanques,
+.activity_thumb_dame,
+.activity_thumb_park {
     object-fit: cover;
     height: 136px;
     width: 100%;
     padding: 5px;
     border-radius: 17px 17px 0px 0px;
+
 }
 
-.activity_body{
-    font-size: 0.8rem;
-    font-weight: 400;
+.body_activity {
     margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
 /*========================FOOTER=====================================*/
-.footer_body{
+.footer_body {
     margin-left: 5%;
 }
 
@@ -434,23 +458,24 @@ footer {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.list-element{
+
+.list-element {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.list-element a:hover{
+
+.list-element a:hover {
     color: #0065fc;
 }
 
 /*========================desktop==================================
 ==================================================================*/
-@media only screen and (min-width: 900px)
-{
+@media only screen and (min-width: 1000px) {
     .site-content {
         width: 100%;
         display: grid;
-        grid-template-columns: 5% 60% 40px 30% 5% ;
-        grid-template-areas: 
+        grid-template-columns: 5% 60% 40px 30% 5%;
+        grid-template-areas:
             "header header header header header"
             "search search search search search"
             "filter filter filter filter filter"
@@ -464,81 +489,87 @@ footer {
         grid-area: header;
     }
 
-    .search{
+    .search {
         grid-area: search;
         margin: 0;
     }
 
-    .filter{
+    .filter {
         grid-area: filter;
     }
-	#hebergement {
+
+    main {
         background-color: #f2f2f2;
         height: auto;
         border-radius: 17px;
         grid-area: main;
         width: 95%;
-        
-    }    
+
+    }
 
     aside {
-        height: auto;
+        height: fit-content;
         border-radius: 17px;
         grid-area: aside;
         max-width: 355px;
         margin-left: 40px;
         margin-right: 5%;
     }
-    #activity{
+
+    #activity {
         grid-area: activity;
     }
+
     footer {
-            grid-area: footer;
-            width: 100%;
-            font-size: 16px;
-        }
-	
-	/*---------------------------*/
-	
-    .navbar-container{
+        grid-area: footer;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /*---------------------------*/
+
+    .navbar-container {
         flex-wrap: nowrap;
         position: relative;
         top: -109px;
     }
 
-    .suscrib-link{
-            position: initial;
-            margin-left: 10px;
-            padding-top: 40px;
-    } 
+    .suscrib-link {
+        position: initial;
+        margin-left: 10px;
+        padding-top: 40px;
+    }
+
     .suscrib-link:hover {
         color: #0065fc;
     }
-	
-	.activity-link{
-		width: 10%;
-		border-bottom: none;
-		padding-top: 40px;
-	}
-    .activity-link:hover{
-		width: 10%;
+
+    .activity-link {
+        width: 10%;
+        border-bottom: none;
+        padding-top: 40px;
+    }
+
+    .activity-link:hover {
+        width: 10%;
         border-bottom: none;
         border-top: solid 3px #0065fc;
         color: #0065fc;
     }
-	.hebergement-link{
-		 width: 10%;
-		 border-bottom: none;
-		 border-top: solid 3px #0065fc;
-		 padding-top: 40px;
-	}
 
-    .titre_container{
+    .hebergement-link {
+        width: 10%;
+        border-bottom: none;
+        border-top: solid 3px #0065fc;
+        padding-top: 40px;
+    }
+
+    .titre_container {
         margin-top: -70px;
     }
 
-/*==============================SEARCH============================ */
-    .btn-recherche_input_submit{
+    /*==============================SEARCH============================ */
+    .btn-recherche_input_submit {
         visibility: visible;
         position: absolute;
         height: 50px;
@@ -549,13 +580,16 @@ footer {
         font-weight: bold;
         padding: 15px;
     }
-    .btn-recherche_loupe{
+
+    .btn-recherche_loupe {
         visibility: hidden;
     }
-	.card-aside-body{
+
+    .card-aside-body {
         min-width: 320px;
     }
-	/*===================main(hebergement)=================================*/
+
+    /*===================main(hebergement)=================================*/
     .hebergement-cards-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -563,8 +597,8 @@ footer {
         align-items: stretch;
     }
 
-    .hebergement-thumb{
-        width: 240px;
+    .hebergement-thumb {
+        max-width: 240px;
     }
 
     .hebergement_card {
@@ -572,76 +606,146 @@ footer {
     }
 
     .moore
-/*==============================FILTER============================ */
-    .filter-container{
+
+    /*==============================FILTER============================ */
+    .filter-container {
         display: flex;
     }
-/*==============================ACTIVITY============================ */
-    .activity_cards_content{
+
+    /*==============================ACTIVITY============================ */
+    .activity_cards_content {
         display: grid;
-        grid-template-columns:0px 1fr 1fr 1fr 1fr ;
-        grid-template-rows: 1fr;
-        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        /*grid-template-rows: 1fr;
+        justify-items: stretch;
+        align-items: stretch;*/
+
+        /*grid-template-areas:
+            " port fort calanques dame "
+            " port frioul calanques park";*/
     }
-    /*.activity_thumb{}*/
+
+    .activity_cards {
+        max-width: 300px;
+        height: fit-content;
+        height: -moz-max-content;
+        width: fit-content;
+
+    }
+
+
+    .activity_thumb_port {
+        max-width: 300px;
+        height: 390px;
+        padding: 3px;
+    }
+
+    .activity_thumb_fort {
+        max-width: 300px;
+        height: 180px;
+        padding: 3px;
+    }
+
+    .activity_thumb_frioul {
+        max-width: 300px;
+        height: 110px;
+        padding: 3px;
+    }
+
+    .activity_thumb_calanques {
+        max-width: 300px;
+        height: 390px;
+        padding: 3px;
+    }
+
+    .activity_thumb_dame {
+        max-width: 300px;
+        height: 140px;
+
+    }
+
+    .activity_thumb_park {
+        max-width: 300px;
+        height: 155px;
+
+    }
 
     .port {
+        grid-area: port;
+    }
+
+    .fort {
+        grid-area: fort;
+    }
+
+    .frioul {
+        grid-area: frioul;
+    }
+
+    .calanques {
+        grid-area: calanques;
+    }
+
+    .dame {
+        grid-area: dame;
+    }
+
+    .park {
+        grid-area: park;
+    }
+
+    
+    .port {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 6;
+       
+    }
+
+    .fort {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 4;
+        height: fit-content;
     }
-
-    .port img {
-        height: 400px;
-    }
-
-    .fort {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    
 
     .frioul {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 6;
     }
 
     .calanques {
-        grid-column-start: 4;
-        grid-column-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
         grid-row-start: 1;
-        grid-row-end: 4;
-    }
-
-    .calanques img {
-        height: 400px;
+        grid-row-end: 6;
     }
 
     .dame{
-        grid-column-start: 5;
-        grid-column-end: 6;
+        grid-column-start: 4;
+        grid-column-end: 5;
         grid-row-start: 1;
-        grid-row-end: 3;
+        grid-row-end: 2;
+        height: fit-content;
     }
 
     .park{
-        grid-column-start: 5;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 6;
     }
 
-    .list-element{
+    .list-element {
         margin-top: 30px;
         padding-bottom: 0px;
     }
 
-    .footer_body{
+    .footer_body {
         display: flex;
     }
 
@@ -649,6 +753,66 @@ footer {
     .listc {
         margin-left: 20%;
     }
+
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 999px) {
+
+    .hebergement_title,
+    .activity_title,
+    .aside_title,
+    .moore {
+        text-align: center;
+    }
+
+    .hebergement-cards-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .hebergement-thumb {
+        max-width: 240px;
+    }
+
+    .hebergement_card {
+        max-width: 245px;
+    }
+
+
+    .activity_cards_content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .activity_cards {
+        max-width: 245px;
+    }
+
+    .activity_thumb_port,
+    .activity_thumb_fort,
+    .activity_thumb_frioul,
+    .activity_thumb_calanques,
+    .activity_thumb_dame,
+    .activity_thumb_park {
+        object-fit: cover;
+        height: 136px;
+        max-width: 245px;
+        padding: 5px;
+
+    }
+
+
+    footer {
+        display: grid;
+        width: 100%;
+        font-size: 16px;
+    }
+
 
 
 }
