@@ -634,6 +634,15 @@ footer {
         max-width: 300px;
         height: fit-content;
         width: fit-content;
+        width: -moz-available;
+    }
+    .activity_thumb_port,
+    .activity_thumb_fort,
+    .activity_thumb_frioul,
+    .activity_thumb_calanques,
+    .activity_thumb_dame,
+    .activity_thumb_park{
+        width: -moz-available;
     }
 
 
