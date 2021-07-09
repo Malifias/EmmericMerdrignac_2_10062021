@@ -320,7 +320,7 @@ aside {
     height: 115px;
     width: 128px;
     padding: 5px;
-    border-radius: 1px 1px 0px 0px;
+    border-radius: 17px 0px 0px 17px;
 }
 
 .prix-aside {
@@ -392,11 +392,14 @@ aside {
 
 .hebergement_body_note {
     display: flex;
+    margin-top: 10px;
     margin-left: 5%;
+    margin-bottom: 10px;
 }
 
 .moore {
-    margin-left: 5%
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
 /*========================ACTIVITY===================================*/
@@ -586,6 +589,14 @@ footer {
         visibility: hidden;
     }
 
+    .filter-title {
+        margin-left: 0px;
+        margin-right: 30px;
+        margin-top: 50px;
+        position: relative;
+        font-size: 16px;
+    }
+
     .card-aside-body {
         min-width: 320px;
     }
@@ -599,7 +610,7 @@ footer {
     }
 
     .hebergement-thumb {
-        max-width: 240px;
+        max-width: 245px;
     }
 
     .hebergement_card {
@@ -616,22 +627,13 @@ footer {
     /*==============================ACTIVITY============================ */
     .activity_cards_content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-        /*grid-template-rows: 1fr;
-        justify-items: stretch;
-        align-items: stretch;*/
-
-        /*grid-template-areas:
-            " port fort calanques dame "
-            " port frioul calanques park";*/
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .activity_cards {
         max-width: 300px;
         height: fit-content;
-        height: -moz-max-content;
         width: fit-content;
-
     }
 
 
@@ -672,36 +674,11 @@ footer {
     }
 
     .port {
-        grid-area: port;
-    }
-
-    .fort {
-        grid-area: fort;
-    }
-
-    .frioul {
-        grid-area: frioul;
-    }
-
-    .calanques {
-        grid-area: calanques;
-    }
-
-    .dame {
-        grid-area: dame;
-    }
-
-    .park {
-        grid-area: park;
-    }
-
-    
-    .port {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 6;
-       
+
     }
 
     .fort {
@@ -726,7 +703,7 @@ footer {
         grid-row-end: 6;
     }
 
-    .dame{
+    .dame {
         grid-column-start: 4;
         grid-column-end: 5;
         grid-row-start: 1;
@@ -734,7 +711,7 @@ footer {
         height: fit-content;
     }
 
-    .park{
+    .park {
         grid-column-start: 4;
         grid-column-end: 5;
         grid-row-start: 2;
@@ -767,6 +744,14 @@ footer {
         text-align: center;
     }
 
+    .filter-title {
+        margin-left: 0px;
+        margin-right: 30px;
+        margin-top: 50px;
+        position: relative;
+        font-size: 16px;
+    }
+
     .hebergement-cards-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -775,7 +760,7 @@ footer {
     }
 
     .hebergement-thumb {
-        max-width: 240px;
+        max-width: 245px;
     }
 
     .hebergement_card {
