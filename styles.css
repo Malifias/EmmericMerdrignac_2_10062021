@@ -29,7 +29,7 @@ fieldset {
 ==================================================================*/
 
 /*========================NAVEBAR=====================================*/
-navbar a {
+nav a {
     display: block;
     font-size: 1.2rem;
     font-weight: 500;
@@ -302,6 +302,7 @@ aside {
     display: flex;
     background-color: white;
     max-width: 335px;
+    width: 100%;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 17px;
@@ -310,27 +311,26 @@ aside {
     transition: 0.3s;
 }
 
-.card-aside-body {
+.cards-aside-body {
+    display: inline-block;
     position: relative;
     margin: 15px 15px 5px 15px;
 }
 
 .aside-thumb {
-    object-fit: cover;
-    height: 115px;
-    width: 128px;
+    float: left;
+    height: 135px;
+    max-width: 135px;
+    width: fit-content;
+    width: -moz-available;
     padding: 5px;
     border-radius: 17px 0px 0px 17px;
 }
 
+
 .prix-aside {
     font-size: 0.8rem;
     font-weight: 400;
-    margin-left: 5%;
-}
-
-.title-card-aside {
-    margin-left: 5%;
 }
 
 
@@ -340,8 +340,8 @@ aside {
 
 .note-aside {
     display: flex;
-    margin-top: 15%;
-    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .fas {
@@ -434,7 +434,6 @@ aside {
     object-fit: cover;
     height: 136px;
     width: 100%;
-    padding: 5px;
     border-radius: 17px 17px 0px 0px;
 
 }
@@ -512,6 +511,8 @@ footer {
     }
 
     aside {
+        text-align: left;
+        height: -moz-available;
         height: fit-content;
         border-radius: 17px;
         grid-area: aside;
@@ -597,9 +598,6 @@ footer {
         font-size: 16px;
     }
 
-    .card-aside-body {
-        min-width: 320px;
-    }
 
     /*===================main(hebergement)=================================*/
     .hebergement-cards-content {
@@ -649,25 +647,21 @@ footer {
     .activity_thumb_port {
         max-width: 300px;
         height: 390px;
-        padding: 3px;
     }
 
     .activity_thumb_fort {
         max-width: 300px;
         height: 180px;
-        padding: 3px;
     }
 
     .activity_thumb_frioul {
         max-width: 300px;
         height: 110px;
-        padding: 3px;
     }
 
     .activity_thumb_calanques {
         max-width: 300px;
         height: 390px;
-        padding: 3px;
     }
 
     .activity_thumb_dame {
@@ -695,7 +689,6 @@ footer {
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 4;
-        height: fit-content;
     }
 
     .frioul {
@@ -717,7 +710,6 @@ footer {
         grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 2;
-        height: fit-content;
     }
 
     .park {
