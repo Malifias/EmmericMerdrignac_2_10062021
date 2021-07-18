@@ -320,9 +320,7 @@ aside {
 .aside-thumb {
     float: left;
     height: 135px;
-    max-width: 135px;
-    width: fit-content;
-    width: -moz-available;
+    width: 135px;
     padding: 5px;
     border-radius: 17px 0px 0px 17px;
 }
